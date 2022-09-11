@@ -1,17 +1,29 @@
 {
   "name": "modons",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Modern network security and IT infrastructure development",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --watch --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm-run-all clean --parallel build:css eleventy",
+    "eleventy": "eleventy --watch --serve",
+    "debug": "set DEBUG=* & eleventy",
+    "clean": "rimraf build",
+    "build:css": "postcss src/static/css/tailwind.css --c tailwind.config.js --o build/static/css/style.css --watch",
+    "build:prod": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i src/static/css/tailwind.css -c tailwind.config.js -o build/static/css/style.css --minify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
-    "date-fns": "^2.28.0"
+    "@tailwindcss/typography": "^0.5.7",
+    "date-fns": "^2.28.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.8"
   }
 }

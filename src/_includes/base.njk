@@ -5,11 +5,16 @@ title: My default title
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="/static/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="/style.css"/>
   <title>{{ title }}</title>
 </head>
 <body>
+  {% include "./partials/header.njk" %}
   <main>
+    <h1 class="text-3xl font-bold underline">
+      Hello world!
+    </h1>
     {{ content | safe }}
     <small>A website by {{ site.author }} - &copy; {{ site.copyrightYear }}</small>
   </main>
