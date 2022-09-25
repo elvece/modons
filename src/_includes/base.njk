@@ -1,5 +1,5 @@
 ---
-title: My default title
+title: Modons
 ---
 <!DOCTYPE html>
 <head>
@@ -11,13 +11,10 @@ title: My default title
 </head>
 <body>
   {% include "./partials/header.njk" %}
-  <main>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+  <main class="relative">
     {{ content | safe }}
-    <small>A website by {{ site.author }} - &copy; {{ site.copyrightYear }}</small>
   </main>
+  {% include "./partials/footer.njk" %}
 </body>
 <script src="//unpkg.com/alpinejs" defer></script>
 </html>
