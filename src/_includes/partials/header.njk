@@ -1,8 +1,8 @@
-<header class="sticky w-screen top-0 z-50 bg-black">
-  <nav class="flex items-center justify-center lg:justify-between flex-wrap p-6 lg:px-0 container mx-auto" x-data="{ isOpen: false }" @keydown.escape="isOpen = false"  @click.away="isOpen = false">
+<header class="sticky w-screen top-0 z-50 bg-zinc-900">
+  <nav class="flex items-center justify-center lg:justify-between flex-wrap p-6 lg:px-0 mx-auto md:mx-10" x-data="{ isOpen: false }" @keydown.escape="isOpen = false"  @click.away="isOpen = false">
     <!--Logo -->
     <div class="flex items-center">
-      <a href="/" class="text-indigo-500 font-bold text-lg"> Logo</a>
+      <a href="/" class="text-indigo-500 font-bold text-lg">Logo</a>
     </div>
 
     <!--Toggle button (hidden on large screens)-->
@@ -14,7 +14,7 @@
     </button>
 
     <!--Menu-->
-    <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center" :class="{ 'hidden': !isOpen }">
+    <div class="w-full lg:flex lg:items-center lg:w-auto text-center" :class="{ 'hidden': !isOpen }">
       {% if navigation.items %}
         <ul class="pt-6 lg:pt-0 lg:flex justify-end flex-1">
           {% for item in navigation.items %}

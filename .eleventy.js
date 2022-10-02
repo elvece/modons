@@ -2,6 +2,7 @@ const format = require('date-fns/format')
 
 module.exports = function (config) {
     config.addPassthroughCopy({ './src/static/img/': 'static/img/' })
+    config.addPassthroughCopy({ './src/static/fonts/': 'static/fonts/' })
 
     config.addWatchTarget('./tailwind.config.js')
     config.addWatchTarget('./static/css/tailwind.css')

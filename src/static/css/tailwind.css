@@ -6,4 +6,53 @@
   .small-caps {
     font-variant: small-caps;
   }
+
+  .text--yaku span {
+    display: inline-block;
+    position: relative;
+    -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 0deg);
+    transform: perspective(1000px) rotate3d(0, 1, 0, 0deg);
+    -webkit-transition: -webkit-transform 0.5s, color 0.5s;
+    transition: transform 0.5s, color 0.5s;
+  }
+
+  .text--yaku:hover span {
+    -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 360deg);
+    transform: perspective(1000px) rotate3d(0, 1, 0, 360deg);
+  }
+
+  .text--yaku span:nth-child(4n),
+  .text--yaku:hover span:first-child {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+
+  .text--yaku span:nth-child(3n),
+  .text--yaku:hover span:nth-child(2n) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+
+  .text--yaku span:nth-child(2n),
+  .text--yaku:hover span:nth-child(3n) {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+
+  .text--yaku span:first-child,
+  .text--yaku:hover span:nth-child(4n) {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Minimal';
+    src: url('../fonts/MBF-Minimal.ttf') format('embedded-opentype'), /* Internet Explorer */
+         url('../fonts/MBF-Minimal.ttf') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/MBF-Minimal.ttf') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/MBF-Minimal.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/MBF-Minimal.ttf') format('svg'); /* Legacy iOS */
+  }
 }

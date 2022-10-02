@@ -6,6 +6,10 @@ module.exports = {
             center: true,
         },
         extend: {
+            screens: {
+                '3xl': '1792px',
+                '4xl': '2048px'
+            },
             colors: {},
         },
     },

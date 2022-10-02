@@ -1,0 +1,41 @@
+{
+  "services": [
+    {
+      "title": "Title 1",
+      "icon": "/static/img/logo-github.svg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "title": "Title 2",
+      "icon": "/static/img/logo-github.svg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "title": "Title 3",
+      "icon": "/static/img/logo-github.svg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "title": "Title 4",
+      "icon": "/static/img/logo-github.svg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  ],
+  "certs": [
+    {
+      "title": "Certification Uno",
+      "link": "https://fast.com",
+      "icon": "/static/img/logo-github.svg"
+    },
+    {
+      "title": "Certification that goes onto multiple lines",
+      "link": "https://fast.com",
+      "icon": "/static/img/logo-github.svg"
+    },
+    {
+      "title": "Cert 3",
+      "link": "https://fast.com",
+      "icon": "/static/img/logo-github.svg"
+    }
+  ]
+}
