@@ -11,66 +11,83 @@ title: Modons
 <body>
   {% include "./partials/header.njk" %}
   <main class="relative min-h-screen">
-    <div class="flex justify-center content-center flex-wrap h-screen bg-gradient-to-b from-zinc-900 to-indigo-800 relative">
-      <div class="grid grid-flow-row xl:grid-rows-6 4xl:grid-rows-3">
-        <div class="flex justify-center content-center flex-wrap">
-          <div class="text-5xl sm:text-7xl md:text-8xl text-slate-300 font-['Minimal'] text--yaku hover:cursor-crosshair">
-            <span>m</span>
-            <span>o</span>
-            <span>d</span>
-            <span>o</span>
-            <span>n</span>
-            <span>s</span>
-          </div>
-        </div>
-        <div class="flex justify-center content-center self-center p-2">
-          <p class="text-2xl md:text-3xl tracking-wide text-slate-400 font-extralight small-caps">it security infrastructure</p>
-        </div>
-        <div class="flex justify-center content-center p-6">
-          <button class="rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 py-3 px-5">
-            <a class="text-lg md:text-2xl font-light" href="mailto:julian@modons.com?subject=Initial%20Consultation&body=Hi!" target="_blank" rel="noopener noreferrer">Schedule Consultation</a></button>
+    <div class="h-screen grid bg-gradient-to-b from-zinc-900 to-indigo-800">
+      <div class="hidden xl:block" style="grid-area: 1/1">
+        <div class="min-h-full min-w-full bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('static/img/abstract_lines.png')">
         </div>
       </div>
-      <div class="flex justify-end p-10 3xl:absolute 3xl:bottom-12 3xl:right-2 4xl:bottom-28 4xl:right-32"><img class="w-screen md:w-[50vh]" src="/static/img/network_setup.svg"></div>
+      <div class="relative flex justify-center content-center flex-wrap" style="grid-area: 1/1">        
+        <div class="grid grid-flow-row lg:auto-rows-min xl:grid-rows-6 2xl:grid-rows-5 4xl:grid-rows-3">
+          <div class="flex justify-center content-center flex-wrap">
+            <div class="text-5xl sm:text-7xl md:text-8xl text-slate-300 font-['Minimal'] text--yaku hover:cursor-crosshair">
+              <span>m</span>
+              <span>o</span>
+              <span>d</span>
+              <span>o</span>
+              <span>n</span>
+              <span>s</span>
+            </div>
+          </div>
+          <div class="flex justify-center content-center self-center p-2">
+            <p class="text-2xl md:text-4xl tracking-wide text-slate-400 font-extralight small-caps">it security infrastructure</p>
+          </div>
+          <div class="flex justify-center content-center p-6">
+            <button class="rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 py-3 px-5 lg:py-4 lg:px-6 transition ease-in-out delay-100 hover:-translate-x-1 hover:scale-110 duration-300">
+              <a class="text-lg md:text-2xl font-light" href="mailto:julian@modons.com?subject=Initial%20Consultation&body=Hi!" target="_blank" rel="noopener noreferrer">Schedule Consultation</a></button>
+          </div>
+        </div>
+        <div class="flex justify-end p-10 xl:absolute xl:bottom-[28rem] 4xl:bottom-80 xl:right-2 2xl:right-6 3xl:right-20 4xl:right-48">
+          <img class="w-screen md:w-[50vh] lg:w-[40vh] xl:w-[30vh] 2xl:w-[35vh] 4xl:w-[40vh]" src="/static/img/network_setup.svg">
+        </div>
+      </div>
     </div>
-    <div class="grid auto-rows-min gap-4">
-      <div class="md:h-[65vh] flex justify-center content-center px-10 py-16">
-        <div class="grid md:grid-cols-3 md:gap-4 md:h-full">
-          <div class="flex justify-center content-center"><img src="/static/img/logo-github.svg" alt="" class="w-20 md:w-40"></div>
-          <div class="md:col-span-2 md:flex md:content-center md:flex-wrap">
-            <h1 class="font-extrabold py-4">About</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="bg-blue-100">
+    {# <div class="grid auto-rows-min bg-blue-200"> #}
+      <div class="h-full md:h-[80vh] container flex items-center mx-auto py-20">
+        <div class="grid grid-cols-1 p-10 2xl:p-28 2xl:grid-cols-3 2xl:gap-24 flex items-center md:backdrop-blur-sm md:shadow-2xl md:shadow-indigo-800/40 md:rounded-2xl">
+          <div class="flex justify-center">
+            <div class="w-20 lg:w-32"><img src="/static/img/logo-github.svg" alt=""></div>
+            <div class="w-36 lg:w-64"><img src="/static/img/logo-github.svg" alt=""></div>
+            <div class="w-24 lg:w-40"><img src="/static/img/logo-github.svg" alt=""></div>
+          </div>
+          <div class="2xl:col-span-2 2xl:col-start-2 flex content-center flex-wrap">
+            <h1 class="font-extrabold tracking-wide text-zinc-800 font-['Minimal'] text-3xl lg:text-4xl py-8">About</h1>
+            <p class="text-zinc-800 text-lg md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
       </div>
-      <div class="grid md:grid-cols-3 md:gap-4 h-full bg-indigo-200">
-        <div class="md:col-span-2 md:col-start-2 flex content-center flex-wrap px-10 py-16">
-          <h1 class="font-extrabold pt-4 pb-8">Services</h1>
-          <div class="grid md:grid-rows-2 md:grid-cols-2 gap-10">
+      <div class="grid lg:grid-cols-3 lg:gap-4 h-full bg-zinc-800 relative lg:p-32">
+        <div class="flex place-self-center p-10 md:pt-20 md:justify-start 3xl:p-12 lg:absolute lg:top-40 3xl:top-60 md:-left-6 xl:-left-1 3xl:-left-4 4xl:left-10">
+          <img class="w-fit lg:w-[32vh] xl:w-[36vh] 2xl:w-[40vh] 3xl:w-[50vh] 4xl:w-[60vh]" src="/static/img/network_analysis.svg">
+        </div>
+        <div class="lg:col-span-2 lg:col-start-2 flex content-center flex-wrap px-10 py-16">
+          <h1 class="font-extrabold tracking-wide text-slate-300 font-['Minimal'] text-3xl lg:text-4xl pb-8">Services</h1>
+          <div class="grid 2xl:grid-rows-2 2xl:grid-cols-2 2xl:grid-cols-2 3xl:grid-cols-3 gap-12">
             {% for item in data.services %}
-              <div class="">
-                <img src="{{ item.icon }}" alt="Service Icon" class="w-10">
-                <h1 class="font-semibold py-4">{{ item.title}}</h1>
-                <p>{{ item.description}}</p>
+              <div class="shadow-lg shadow-zinc-900 bg-zinc-700 p-7 lg:p-10 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                <div class="flex items-center pb-5">
+                  <div class="bg-gradient-to-tl from-cyan-500 to-indigo-700 shadow-xl w-20 p-2 rounded-full">
+                    <img src="{{ item.icon }}" alt="Service Icon" class="min-w-full invert">
+                  </div>
+                  <h1 class="font-semibold tracking-wide text-slate-100 text-2xl px-4">{{ item.title}}</h1>
+                </div>
+                <p class="text-lg text-slate-200 flex-wrap">{{ item.description}}</p>
               </div>
             {% endfor %}
           </div>
         </div>
       </div>
-      <div class="grid auto-rows-min gap-4 px-10 py-16">
-          <h1 class="font-extrabold py-4 md:text-center">Certifications</h1>
-          <div class="grid md:grid-flow-col md:auto-cols-max md:justify-center md:p-10 gap-10 h-full">
-            {% for item in data.certs %}
-              <div class="flex items-center">
-                <img src="{{ item.icon }}" alt="Certification Icon" class="w-20">
-                <h1 class="font-semibold px-5">{{ item.title}}</h1>
-              </div>
-            {% endfor %}
-          </div>
-      </div>
-      <div class="bg-indigo-200">
-        
-      </div>
+      {# <div class="grid auto-rows-min gap-4 h-[40vh] content-center">
+        <h1 class="font-extrabold py-4 md:text-center">Certifications</h1>
+        <div class="grid md:grid-flow-col md:auto-cols-max md:justify-center md:p-10 gap-10 h-full">
+          {% for item in data.certs %}
+            <div class="flex items-center">
+              <img src="{{ item.icon }}" alt="Certification Icon" class="w-20">
+              <h1 class="font-semibold px-5">{{ item.title}}</h1>
+            </div>
+          {% endfor %}
+        </div>
+      </div> #}
     </div>
   </main>
   {% include "./partials/footer.njk" %}
