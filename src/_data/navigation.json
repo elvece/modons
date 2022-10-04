@@ -1,11 +1,11 @@
 {
     "items": [
         {
-            "title": "Services",
+            "title": "services",
             "url": "/services"
         },
         {
-            "title": "Blog",
+            "title": "blog",
             "url": "/blog"
         }
     ]
