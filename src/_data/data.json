@@ -1,24 +1,38 @@
 {
+  "navigation": [
+    {
+      "title": "services",
+      "url": "/services"
+    },
+    {
+      "title": "blog",
+      "url": "/blog"
+    }
+  ],
   "services": [
     {
-      "title": "Title 1",
+      "title": "General IT Support",
       "icon": "/static/img/logo-github.svg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "Need computer help? Trouble with WiFi? Want recommendations for your next upgrade? Get in touch.",
+      "link": ""
     },
     {
-      "title": "Title 2",
+      "title": "Personal Cyber Security",
       "icon": "/static/img/logo-github.svg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "Assess your exposure and devise practical solutions for day-to-day internet security.",
+      "link": ""
     },
     {
-      "title": "Title 3",
+      "title": "Business infrastructure",
       "icon": "/static/img/logo-github.svg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "Startups and small businesses require custom infrastructure to scale securely.",
+      "link": ""
     },
     {
-      "title": "Title 4",
+      "title": "Home Network Setup",
       "icon": "/static/img/logo-github.svg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "Looking for a more advanced home network setup? We have you covered.",
+      "link": ""
     }
   ],
   "certs": [

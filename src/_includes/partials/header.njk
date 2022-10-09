@@ -1,5 +1,5 @@
 <header class="sticky w-screen top-0 z-50 bg-zinc-900">
-  <nav class="flex items-center justify-center lg:justify-between flex-wrap p-6 lg:px-0 mx-auto md:mx-10" x-data="{ isOpen: false }" @keydown.escape="isOpen = false"  @click.away="isOpen = false">
+  <nav class="flex items-center justify-center lg:justify-between flex-wrap p-5 lg:px-0 mx-auto md:mx-10" x-data="{ isOpen: false }" @keydown.escape="isOpen = false"  @click.away="isOpen = false">
     <!--Logo -->
     <div class="flex items-center">
       <a href="/" class="invert hover:fill-indigo-500"><img src="/static/img/circles.png" class="w-6 lg:w-8" alt="Circle Logo"></a>
@@ -15,9 +15,9 @@
 
     <!--Menu-->
     <div class="w-full lg:flex lg:items-center lg:w-auto text-center" :class="{ 'hidden': !isOpen }">
-      {% if navigation.items %}
+      {% if data.navigation %}
         <ul class="pt-6 lg:pt-0 lg:flex justify-end flex-1">
-          {% for item in navigation.items %}
+          {% for item in data.navigation %}
             <li class="mr-3">
               <a @click="isOpen = false" class="inline-block text-2xl small-caps tracking-wider text-slate-400 font-extralight hover:text-indigo-500 py-2 px-4" href="{{ item.url }}">{{ item.title }}</a>
             </li>
