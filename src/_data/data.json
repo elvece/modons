@@ -2,11 +2,11 @@
   "navigation": [
     {
       "title": "services",
-      "url": "/services"
+      "url": "#services"
     },
     {
-      "title": "blog",
-      "url": "/blog"
+      "title": "about",
+      "url": "/about"
     }
   ],
   "services": [
@@ -23,7 +23,7 @@
       "link": ""
     },
     {
-      "title": "Business infrastructure",
+      "title": "Business Infrastructure",
       "icon": "/static/img/logo-github.svg",
       "description": "Startups and small businesses require custom infrastructure to scale securely.",
       "link": ""

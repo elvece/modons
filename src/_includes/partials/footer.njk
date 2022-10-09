@@ -1,14 +1,30 @@
-<footer class="bottom-0 left-0 h-80 w-screen bg-zinc-900">
-  <div class="flex justify-center content-center flex-wrap h-60 p-6 lg-px-0 container mx-auto">
-    <div class="grid grid-flow-row auto-rows-max grid-rows-2">
-      <div class="flex justify-center content-center flex-wrap">
-        <a href="https://github.com/jtroncone" target="_blank" rel="noreferrer noopener"><img src="/static/img/logo-github.svg" class="w-11 p-2 invert" alt="GitHub Logo"></a>
-        <a href="/" target="_blank" rel="noreferrer noopener"><img src="/static/img/logo-youtube.svg" class="w-11 p-2 invert" alt="YouTube Logo"></a>
-        <a href="/" target="_blank" rel="noreferrer noopener"><img src="/static/img/logo-telegram.svg" class="w-11 p-2 invert" alt="Telegram Logo"></a>
+<footer class="w-screen bg-zinc-900">
+  <div class="container text-slate-300 grid grid-flow-row auto-rows-max lg:grid-cols-2 lg:gap-x-60 lg:pt-8 lg:h-80  lg:relative">
+    <div class="flex flex-wrap flex-col p-6">
+      {# <div class="self-center w-6"><img class="invert" src="/static/img/circles.png" alt="Circle Logo"></div> #}
+      <span class="text-3xl font-['Minimal']">modons</span>
+      <p class="pt-6 md:text-xl font-light">Have a question? Feel free to reach out to us at hello@modons.com</p>
+      {# <div class="flex pt-6">
+        <a class="pr-2 w-11" href="https://github.com/jtroncone" target="_blank" rel="noreferrer noopener"><img src="/static/img/logo-github.svg" class="invert hover:fill-indigo-500" alt="GitHub Logo"></a>
+        <a class="pr-2 w-11" href="/" target="_blank" rel="noreferrer noopener"><img src="/static/img/logo-youtube.svg" class="invert hover:fill-indigo-500" alt="YouTube Logo"></a>
+        <a class="pr-2 w-11" href="/" target="_blank" rel="noreferrer noopener"><img src="/static/img/logo-telegram.svg" class="invert hover:fill-indigo-500" alt="Telegram Logo"></a>
+      </div> #}
+    </div>
+    <div class="grid grid-flow-row auto-rows-max md:grid-flow-col md:auto-cols-max md:gap-x-36">
+      <div class="p-6">
+        <h1 class="font-medium tracking-wide text-lg text-blue-400">Support</h1>
+        <a class="font-light text-sm md:text-base" href="">Contact Us</a>
       </div>
-      <div class="flex justify-center content-center p-2 text-white">
-        <small>A website by {{ site.author }} - &copy; {{ site.copyrightYear }}</small>
+      <div class="p-6">
+        <h1 class="font-medium tracking-wide text-lg text-blue-400">Modons</h1>
+        <div class="flex flex-col">
+          <a class="font-light text-sm md:text-base" href="">About</a>
+          <a class="font-light text-sm md:text-base" href="">Privacy Policy</a>
+        </div>
       </div>
+    </div>
+    <div class="p-6 text-slate-600 lg:absolute lg:bottom-3 ">
+      <small>&copy; {{ site.copyrightYear }} Modons LLC</small>
     </div>
   </div>
 </footer>
