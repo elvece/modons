@@ -2,7 +2,7 @@
   "navigation": [
     {
       "title": "services",
-      "url": "#services"
+      "url": "/services"
     },
     {
       "title": "about",

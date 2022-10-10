@@ -1,4 +1,6 @@
 const format = require('date-fns/format')
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation")
+const markdownIt = require("markdown-it")
 
 module.exports = function (config) {
     config.addPassthroughCopy({ './src/static/img/': 'static/img/' })
@@ -15,8 +17,16 @@ module.exports = function (config) {
         return format(date, dateFormat)
     })
 
+    config.addPlugin(eleventyNavigationPlugin)
+    config.setLibrary("md", markdownIt({
+        html: true,
+        breaks: true,
+        linkify: true
+    }))
+
     return {
         markdownTemplateEngine: 'njk',
+        
         dir: {
             input: './src',
             output: './build'

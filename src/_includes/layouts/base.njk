@@ -9,7 +9,7 @@ title: Modons
   <title>{{ title }}</title>
 </head>
 <body>
-  {% include "./partials/header.njk" %}
+  {% include "../partials/header.njk" %}
   <main class="relative min-h-screen">
     <div class="h-screen grid bg-gradient-to-b from-zinc-900 to-indigo-800">
       <div class="flex justify-center content-center pt-16">
@@ -39,11 +39,6 @@ title: Modons
     <div class="min-h-full bg-no-repeat bg-center bg-cover bg-fixed bg-blue-200" style="background-image: url('static/img/abstract_lines.png')">
       <div class="md:h-[80vh] container flex items-center mx-auto lg:py-20 p-8">
         <div class="grid grid-cols-1 2xl:grid-cols-3 2xl:gap-12 flex items-center ">
-          {# <div class="flex justify-center">
-            <div class="w-20 lg:w-32"><img src="/static/img/logo-github.svg" alt=""></div>
-            <div class="w-36 lg:w-64"><img src="/static/img/logo-github.svg" alt=""></div>
-            <div class="w-24 lg:w-40"><img src="/static/img/logo-github.svg" alt=""></div>
-          </div> #}
           <div class="2xl:col-span-2 2xl:col-start-2 p-8 lg:p-24 backdrop-blur-sm shadow-2xl shadow-indigo-800/40 rounded-2xl">
             <div class="flex content-center justify-center md:justify-start flex-wrap">
               <h1 class="font-extrabold tracking-wide text-zinc-800 text-3xl lg:text-4xl">Helping your family and your business apply the best modern practices for internet, computer and network security.</h1>
@@ -76,6 +71,7 @@ title: Modons
           </div>
         </div>
       </div>
+      {# TODO include when pass certifications #}
       {# <div class="grid auto-rows-min gap-4 h-[40vh] content-center">
         <h1 class="font-extrabold py-4 md:text-center">Certifications</h1>
         <div class="grid md:grid-flow-col md:auto-cols-max md:justify-center md:p-10 gap-10 h-full">
@@ -89,7 +85,7 @@ title: Modons
       </div> #}
     </div>
   </main>
-  {% include "./partials/footer.njk" %}
+  {% include "../partials/footer.njk" %}
 </body>
 <script src="//unpkg.com/alpinejs" defer></script>
 </html>

@@ -1,0 +1,8 @@
+---
+layout: layouts/page.njk
+---
+
+{% for service in collections.services %}
+  <h1 class="font-extrabold tracking-wide text-zinc-800 text-3xl lg:text-4xl">{{ service.data.title }}</h1>
+  <p class="text-zinc-800 text-lg md:text-xl py-8">{{ service.data.content | safe }}</p>
+{% endfor %}
