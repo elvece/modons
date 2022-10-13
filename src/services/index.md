@@ -2,8 +2,6 @@
 title: Services
 layout: partials/service
 tags: [services]
-eleventyNavigation:
-  key: Services
 ---
 
 ## General IT Support
