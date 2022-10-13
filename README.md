@@ -4,7 +4,7 @@ Brochure website for Modons LLC, a company that provides consultation to secure 
 
 ## Local Development
 
-1. Ensure you have node and npm installed. Node version manager ((nvm)[https://github.com/nvm-sh/nvm]) is recommended. 
+1. Ensure you have node and npm installed. Node version manager ([nvm](https://github.com/nvm-sh/nvm)) is recommended. 
 
     ```
     node - v
@@ -20,7 +20,7 @@ Brochure website for Modons LLC, a company that provides consultation to secure 
     npm i 
     ```
 
-3. Run local version from project root:
+3. Run locally from project root:
 
     ```
     npm run start
