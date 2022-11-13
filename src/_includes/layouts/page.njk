@@ -8,17 +8,14 @@
 <body>
   {% include "../partials/header.njk" %}
   <main class="relative min-h-screen">
-    <div class="h-96 grid bg-gradient-to-b from-zinc-900 to-indigo-800 border-solid shadow-xl drop-shadow-xl shadow-indigo-800/40">
-      <div class="flex justify-center content-center self-center">
-        <div class="text-5xl sm:text-4xl md:text-6xl text-slate-300 font-['Minimal']">{{ title }}</div>
+    <div class="h-96 grid bg-indigo-100">
+      <div class="grid auto-rows-min gap-5 sm:justify-center sm:content-center self-center">
+        <div class="text-5xl sm:text-4xl md:text-6xl text-slate-900 font-extrabold">{{ title }}</div>
+        <div class="text-3xl sm:text-2xl md:text-4xl text-slate-900 font-light">{{ tagline }}</div>
       </div>
     </div>
-    <div class="min-h-screen bg-indigo-200">
-      <div class="container flex items-center content-center justify-center p-24">
-        <div class="md-page">
-          {{ content | safe }}
-        </div>
-      </div>
+    <div class="min-h-screen bg-indigo-100">
+      {{ content | safe }}
     </div>
   </main>
   {% include "../partials/footer.njk" %}

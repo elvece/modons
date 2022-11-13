@@ -1,0 +1,41 @@
+{
+  "residential": {
+    "personal": [
+      {
+        "title": "Personal data security",
+        "description": "Concerned about your personal identity and financial data online? Our services can audit your current level of security and consult on best strategies to secure your digital life and reclaim your peace of mind."
+      },
+      {
+        "title": "Data recovery & transfer",
+        "description": "We recover lost data from accidental deletions or failed drives."
+      },
+      {
+        "title": "Custom builds",
+        "description": "Looking for the best computer to suit your needs? Need help building that gaming computer for yourself or loved one? We've got you covered."
+      },
+      {
+        "title": "Computer literacy tutoring & consulting",
+        "description": "Not sure where to start? Want to learn to be more self-reliant? Call us and we will patiently and professionally make computers make more sense!"
+      }
+    ],
+    "home": [
+      {
+        "title": "Computer diagnostics and repairs",
+        "description": "Computers last a long time now. Instead of throwing it away, have us take a look! We can probably fix it for less than the cost of a replacement or recommend a good replacement."
+      },
+      {
+        "title": "Networking & Printing solutions",
+        "description": "We will make sure you are connected to the internet and all your home network devices are working flawlessly. We setup and configure routers, secure Wifi, printers, mobile devices, IOT devices, and more."
+      },
+      {
+        "title": "Virus & Spyware removal",
+        "description": "If your computer has a virus or is running slowly because of malware, we will use tools to find and eradicate the infections."
+      },
+      {
+        "title": "Upgrades and routine maintenance",
+        "description": "We will help you keep your computer running seamlessly with cleanup & optimization, software and hardware upgrades, antivirus software renewals, and more."
+      }
+    ]
+  },
+  "commercial": []
+}

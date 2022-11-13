@@ -1,8 +1,12 @@
 {
   "navigation": [
     {
-      "title": "services",
-      "url": "/services"
+      "title": "residential",
+      "url": "/residential"
+    },
+    {
+      "title": "commercial",
+      "url": "/commercial"
     },
     {
       "title": "about",

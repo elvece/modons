@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = {
-    author: '@elvece',
     copyrightYear: (new Date()).getFullYear(),
-    url: 'https://modons.com'
+    url: 'https://modons.com',
+    tagline: 'secure your digital life',
 }
