@@ -4,7 +4,7 @@ tagline: We make your computer problems disappear. Guaranteed.
 layout: layouts/page.njk
 ---
 
-<div id="residential-personal" class="grid lg:grid-cols-3 lg:gap-4 h-full bg-zinc-800 relative lg:p-32">
+<div id="residential-personal" class="grid lg:grid-cols-3 lg:gap-4 h-full bg-zinc-800 relative lg:px-32 lg:pt-32">
   <div class="flex place-self-center px-10 pt-16 md:pt-20 3xl:p-12 md:justify-start lg:absolute top-20 lg:top-40 3xl:top-60 md:-left-6 xl:-left-1 3xl:-left-4 4xl:left-10">
     <img class="w-fit lg:w-9/12 xl:w-10/12 2xl:11/12" src="/static/img/network_analysis.svg">
   </div>
@@ -21,8 +21,8 @@ layout: layouts/page.njk
     </div>
   </div>
 </div>
-<div id="residential-home" class="grid lg:grid-cols-3 lg:gap-4 h-full bg-zinc-800 relative lg:px-24 lg:pb-24">
-  <div class="lg:col-span-2 flex content-center flex-wrap px-10 py-16">
+<div id="residential-home" class="grid lg:grid-cols-3 lg:gap-4 h-full bg-zinc-800 relative pb-14 lg:px-24 lg:pb-24 overflow-clip">
+  <div class="order-2 lg:order-1 lg:col-span-2 flex content-center flex-wrap px-10 py-16">
     <div class="grid 2xl:grid-rows-2 2xl:grid-cols-2 2xl:grid-cols-2 3xl:grid-cols-3 gap-12">
       {% for item in services.residential.home %}
           <div class="overflow-hidden shadow-lg shadow-zinc-900 bg-zinc-700 p-7 lg:p-10 rounded-lg">
@@ -34,13 +34,24 @@ layout: layouts/page.njk
       {% endfor %}
     </div>
   </div>
-  <div class="flex place-self-center px-10 pt-16 md:pt-20 3xl:p-12 md:justify-start lg:absolute top-20 lg:top-40 3xl:top-60 md:-right- xl:-right-10">
+  <div class="flex order-1 lg:order-2 place-self-center px-10 md:pt-20 3xl:p-12 md:justify-start lg:absolute top-20 lg:top-40 3xl:top-60 md:-right- xl:-right-10">
     <img class="w-fit lg:w-9/12 xl:w-10/12 2xl:11/12" src="/static/img/network_analysis.svg">
   </div>
 </div>
-<div class="h-96 grid bg-indigo-100">
-  <div class="grid auto-rows-min gap-5 sm:justify-center sm:content-center self-center">
-    <div class="text-4xl sm:text-3xl md:text-5xl text-slate-900 font-bold">Can't find what you're looking for?</div>
-    <p class="text-2xl sm:text-xl md:text-3xl text-slate-900 font-light"><a href="">Contact us</a> and we'll work on a solution together.</p>
+<div class="h-[90vh] lg:h-96 grid bg-indigo-300 p-6 lg:p-20">
+  <h1 class="text-4xl sm:text-3xl md:text-5xl text-slate-900 font-bold text-center mt-8 lg:pb-10">Rates</h1>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:justify-center sm:content-center self-center p-4 lg:p-20 lg:bg-indigo-400 rounded-lg">
+    {% for item in rates.residential %}
+      <div class="overflow-hidden p-4 justify-self-center">
+        <p class="text-2xl font-semibold">{{ item.title }}</p>
+        <p class="text-xl font-light pb-3">{{ item.description }}</p>
+        {% if item.remote %}
+          <p class="">Remote: ${{ item.remote }} / hour</p>
+        {% endif %}
+        {% if item["on-site"] %}
+          <p>On-site: ${{ item["on-site"] }} / hour</p>
+        {% endif %}
+      </div>
+    {% endfor %}
   </div>
 </div>
