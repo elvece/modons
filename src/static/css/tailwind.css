@@ -71,4 +71,39 @@
          url('../fonts/MBF-Minimal.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/MBF-Minimal.ttf') format('svg'); /* Legacy iOS */
   }
+
+  p a {
+    position: relative;
+  }
+
+  p a::before {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(130deg, #EE6570, #FF4961, #993E4A);
+    height: 3px;
+    border-radius: 2px;
+    top: 100%;
+    left: 0;
+  }
+
+  p a::before {
+    content: '';
+    position: absolute;
+    background-color: linear-gradient(130deg, #EE6570, #FF4961, #993E4A);
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  p a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
 }

@@ -1,0 +1,30 @@
+{
+  "residential": [
+    {
+      "title": "Diagnostic",
+      "description": "Covers estimate and an hour of labor on any service!",
+      "remote": "100",
+      "on-site": "100"
+    },
+    {
+      "title": "General Labor",
+      "description": "Hourly rate for any service offering",
+      "remote": "150",
+      "on-site": "150"
+    }
+  ],
+  "commercial": [
+    {
+      "title": "Diagnostic",
+      "description": "Covers estimate and an hour of labor on any service!",
+      "remote": "200",
+      "on-site": "200"
+    },
+    {
+      "title": "General Labor",
+      "description": "Hourly rate for any service offering",
+      "remote": "250",
+      "on-site": "250"
+    }
+  ]
+}
