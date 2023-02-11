@@ -16,25 +16,25 @@
   "services": [
     {
       "title": "General IT Support",
-      "icon": "/static/img/logo-github.svg",
+      "icon": "/static/img/Laptop Password.svg",
       "description": "Need computer help? Trouble with WiFi? Want recommendations for your next upgrade? Get in touch.",
       "link": ""
     },
     {
       "title": "Personal Cyber Security",
-      "icon": "/static/img/logo-github.svg",
+      "icon": "/static/img/Secure Monitor.svg",
       "description": "Assess your exposure and devise practical solutions for day-to-day internet security.",
       "link": ""
     },
     {
       "title": "Business Infrastructure",
-      "icon": "/static/img/logo-github.svg",
+      "icon": "/static/img/Cloud Server.svg",
       "description": "Startups and small businesses require custom infrastructure to scale securely.",
       "link": ""
     },
     {
       "title": "Home Network Setup",
-      "icon": "/static/img/logo-github.svg",
+      "icon": "/static/img/Modem.svg",
       "description": "Looking for a more advanced home network setup? We have you covered.",
       "link": ""
     }

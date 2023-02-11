@@ -40,16 +40,16 @@ layout: layouts/page.njk
 </div>
 <div class="h-[90vh] lg:h-96 grid bg-indigo-300 p-6 lg:p-20">
   <h1 class="text-4xl sm:text-3xl md:text-5xl text-slate-900 font-bold text-center mt-8 lg:pb-10">Rates</h1>
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:justify-center sm:content-center self-center p-4 lg:p-20 lg:bg-indigo-400 rounded-lg">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 content-center p-4 lg:p-20 lg:bg-indigo-400 lg:rounded-lg lg:shadow-xl">
     {% for item in rates.residential %}
-      <div class="overflow-hidden p-4 justify-self-center">
+      <div class="overflow-hidden p-4 lg:justify-self-center">
         <p class="text-2xl font-semibold">{{ item.title }}</p>
         <p class="text-xl font-light pb-3">{{ item.description }}</p>
         {% if item.remote %}
-          <p class="">Remote: ${{ item.remote }} / hour</p>
+          <p class="small-caps text-xl">Remote: ${{ item.remote }} / hour</p>
         {% endif %}
         {% if item["on-site"] %}
-          <p>On-site: ${{ item["on-site"] }} / hour</p>
+          <p class="small-caps text-xl">On-site: ${{ item["on-site"] }} / hour</p>
         {% endif %}
       </div>
     {% endfor %}

@@ -1,0 +1,77 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="h-screen grid bg-gradient-to-b from-zinc-900 to-indigo-800">
+  <div class="flex justify-center content-center pt-16">
+    <div class="grid auto-rows-min">
+      <div class="flex justify-center">
+        <img class="w-10/12 md:w-[50vh] lg:w-[40vh] xl:w-[30vh] 2xl:w-[37vh] 4xl:w-[40vh]" src="/static/img/network_setup.svg">
+      </div>
+      <div class="text-5xl sm:text-7xl md:text-8xl text-slate-300 font-['Minimal'] text--yaku hover:cursor-crosshair">
+        <span>m</span>
+        <span>o</span>
+        <span>d</span>
+        <span>o</span>
+        <span>n</span>
+        <span>s</span>
+      </div>
+      <div class="flex justify-center p-2">
+        <p class="text-2xl md:text-4xl tracking-wide text-slate-400 font-extralight small-caps">{{ site.tagline }}</p>
+      </div>
+      <div class="flex justify-center content-center p-6">
+        <button class="rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 py-3 px-5 lg:py-4 lg:px-6 transition ease-in-out delay-100 hover:-translate-x-1 hover:scale-110 duration-300">
+          <a class="text-lg md:text-2xl font-light text-zinc-900" href="mailto:julian@modons.com?subject=Initial%20Consultation&body=Hi!" target="_blank" rel="noopener noreferrer">Schedule Consultation</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="min-h-full bg-no-repeat bg-center bg-cover bg-fixed bg-blue-200" style="background-image: url('static/img/abstract_lines.png')">
+  <div class="md:h-[80vh] container flex items-center mx-auto lg:py-20 p-8">
+    <div class="grid grid-cols-1 2xl:grid-cols-3 2xl:gap-12 flex items-center">
+      <div class="2xl:col-span-2 2xl:col-start-2 p-8 lg:p-24 backdrop-blur-sm shadow-2xl shadow-indigo-800/40 rounded-2xl">
+        <div class="flex content-center justify-center md:justify-start flex-wrap">
+          <h1 class="font-extrabold tracking-wide text-zinc-800 text-3xl lg:text-4xl">Helping your family and your business apply the best modern practices for internet, computer and network security.</h1>
+          <p class="text-zinc-800 text-lg md:text-xl py-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="justify-center rounded-full bg-gradient-to-r from-indigo-500 to-blue-500 py-3 px-7 lg:py-4 lg:px-8 transition ease-in-out delay-100 hover:-translate-x-1 hover:scale-110 duration-300">
+            <a class="text-lg md:text-2xl font-light text-zinc-900" href="#services">Learn more</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="services" class="grid lg:grid-cols-3 lg:gap-4 h-full bg-zinc-800 relative lg:p-32">
+    <div class="flex place-self-center px-10 pt-16 md:pt-20 3xl:p-12 md:justify-start lg:absolute top-20 lg:top-40 3xl:top-60 md:-left-6 xl:-left-1 3xl:-left-4 4xl:left-10">
+      <img class="w-fit lg:w-9/12 xl:w-10/12 2xl:11/12" src="/static/img/network_analysis.svg">
+    </div>
+    <div class="lg:col-span-2 lg:col-start-2 flex content-center flex-wrap px-10 py-16">
+      <h1 class="font-extrabold tracking-wide text-slate-300 font-['Minimal'] text-3xl lg:text-4xl pb-8">Services</h1>
+      <div class="grid 2xl:grid-rows-2 2xl:grid-cols-2 2xl:grid-cols-2 3xl:grid-cols-3 gap-12">
+        {% for item in data.services %}
+          <div class="overflow-hidden shadow-lg shadow-zinc-900 bg-zinc-700 p-7 lg:p-10 rounded-xl">
+            <div class="flex items-center pb-5">
+              <div class="bg-gradient-to-tl from-cyan-500 to-indigo-700 shadow-xl w-20 p-2 rounded-full">
+                <img src="{{ item.icon }}" alt="Service Icon" class="min-w-full">
+              </div>
+              <h1 class="flex-1 font-semibold tracking-wide text-slate-100 text-2xl px-4">{{ item.title}}</h1>
+            </div>
+            <p class="text-lg text-slate-200 flex-wrap">{{ item.description}}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {# TODO include when pass certifications #}
+  {# <div class="grid auto-rows-min gap-4 h-[40vh] content-center">
+    <h1 class="font-extrabold py-4 md:text-center">Certifications</h1>
+    <div class="grid md:grid-flow-col md:auto-cols-max md:justify-center md:p-10 gap-10 h-full">
+      {% for item in data.certs %}
+        <div class="flex items-center">
+          <img src="{{ item.icon }}" alt="Certification Icon" class="w-20">
+          <h1 class="font-semibold px-5">{{ item.title}}</h1>
+        </div>
+      {% endfor %}
+    </div>
+  </div> #}
+</div>
