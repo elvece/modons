@@ -50,26 +50,35 @@
   .md-page h1 {
     display: none;
   }
+
   .md-page h2 {
     font-size: 2.25rem;
     font-weight: 800;
     letter-spacing: 0.025em;
     line-height: 2.5rem;
     padding-bottom: 1rem;
-    color: rgb(39 39 42 / 1); /* .text-zinc-800 */
+    color: rgb(39 39 42 / 1);
+    /* .text-zinc-800 */
   }
+
   .md-page p {
     font-size: 1.5rem;
     line-height: 2rem;
     padding-bottom: 6rem;
   }
+
   @font-face {
     font-family: 'Minimal';
-    src: url('../fonts/MBF-Minimal.ttf') format('embedded-opentype'), /* Internet Explorer */
-         url('../fonts/MBF-Minimal.ttf') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/MBF-Minimal.ttf') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/MBF-Minimal.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/MBF-Minimal.ttf') format('svg'); /* Legacy iOS */
+    src: url('../fonts/MBF-Minimal.ttf') format('embedded-opentype'),
+      /* Internet Explorer */
+      url('../fonts/MBF-Minimal.ttf') format('woff2'),
+      /* Super Modern Browsers */
+      url('../fonts/MBF-Minimal.ttf') format('woff'),
+      /* Pretty Modern Browsers */
+      url('../fonts/MBF-Minimal.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('../fonts/MBF-Minimal.ttf') format('svg');
+    /* Legacy iOS */
   }
 
   p a {
@@ -106,4 +115,7 @@
     transform-origin: bottom left;
   }
 
+  svg {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
 }

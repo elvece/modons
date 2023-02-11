@@ -2,8 +2,8 @@
 layout: layouts/base.njk
 ---
 
-<div class="h-screen grid bg-gradient-to-b from-zinc-900 to-indigo-800">
-  <div class="flex justify-center content-center pt-16">
+<div class="h-screen grid bg-gradient-to-b from-zinc-900 to-indigo-800 place-content-center">
+  <div class="flex justify-center">
     <div class="grid auto-rows-min">
       <div class="flex justify-center">
         <img class="w-10/12 md:w-[50vh] lg:w-[40vh] xl:w-[30vh] 2xl:w-[37vh] 4xl:w-[40vh]" src="/static/img/network_setup.svg">
@@ -21,45 +21,45 @@ layout: layouts/base.njk
       </div>
       <div class="flex justify-center content-center p-6">
         <button class="rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 py-3 px-5 lg:py-4 lg:px-6 transition ease-in-out delay-100 hover:-translate-x-1 hover:scale-110 duration-300">
-          <a class="text-lg md:text-2xl font-light text-zinc-900" href="mailto:julian@modons.com?subject=Initial%20Consultation&body=Hi!" target="_blank" rel="noopener noreferrer">Schedule Consultation</a>
+          <a class="text-lg md:text-2xl font-light text-zinc-900 tracking-wide" href="mailto:julian@modons.com?subject=Initial%20Consultation&body=Hi!" target="_blank" rel="noopener noreferrer">Schedule Consultation</a>
         </button>
       </div>
     </div>
   </div>
 </div>
-<div class="min-h-full bg-no-repeat bg-center bg-cover bg-fixed bg-blue-200" style="background-image: url('static/img/abstract_lines.png')">
-  <div class="md:h-[80vh] container flex items-center mx-auto lg:py-20 p-8">
-    <div class="grid grid-cols-1 2xl:grid-cols-3 2xl:gap-12 flex items-center">
-      <div class="2xl:col-span-2 2xl:col-start-2 p-8 lg:p-24 backdrop-blur-sm shadow-2xl shadow-indigo-800/40 rounded-2xl">
-        <div class="flex content-center justify-center md:justify-start flex-wrap">
-          <h1 class="font-extrabold tracking-wide text-zinc-800 text-3xl lg:text-4xl">Helping your family and your business apply the best modern practices for internet, computer and network security.</h1>
-          <p class="text-zinc-800 text-lg md:text-xl py-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button class="justify-center rounded-full bg-gradient-to-r from-indigo-500 to-blue-500 py-3 px-7 lg:py-4 lg:px-8 transition ease-in-out delay-100 hover:-translate-x-1 hover:scale-110 duration-300">
-            <a class="text-lg md:text-2xl font-light text-zinc-900" href="#services">Learn more</a>
+<div class="min-h-full bg-gradient-to-br from-indigo-400 to-blue-200">
+  <div class="md:h-[80vh] grid auto-rows-max mx-auto lg:py-20 p-8">
+    <div class="grid lg:grid-cols-3 justify-items-center">
+      <div class="flex place-self-center p-10 w-full lg:w-5/6">
+        {% include "svgs/Global Protection.svg" %}
+      </div>
+      <div class="lg:col-span-2 lg:col-start-2 p-8 lg:p-24 backdrop-blur-sm shadow-2xl shadow-indigo-800/40 rounded-2xl">
+        <div class="flex justify-center flex-wrap">
+          <div class="justify-center md:justify-start pb-6">
+            <h1 class="font-extrabold tracking-wide text-zinc-800 text-3xl lg:text-4xl">Helping your family and your business apply the best modern practices for digital security.</h1>
+            <p class="text-zinc-800 text-lg md:text-xl py-8">We specialize in simple solutions to internet, computer and network security education and implementation.</p>
+          </div>
+          <button class="rounded-full bg-gradient-to-r from-indigo-500 to-blue-500 py-3 px-7 lg:py-4 lg:px-8 transition ease-in-out delay-100 hover:-translate-x-1 hover:scale-110 duration-300">
+            <a class="text-lg md:text-2xl font-light text-zinc-200 tracking-wide" href="#services">Learn more</a>
           </button>
         </div>
       </div>
     </div>
   </div>
-  <div id="services" class="grid lg:grid-cols-3 lg:gap-4 h-full bg-zinc-800 relative lg:p-32">
-    <div class="flex place-self-center px-10 pt-16 md:pt-20 3xl:p-12 md:justify-start lg:absolute top-20 lg:top-40 3xl:top-60 md:-left-6 xl:-left-1 3xl:-left-4 4xl:left-10">
-      <img class="w-fit lg:w-9/12 xl:w-10/12 2xl:11/12" src="/static/img/network_analysis.svg">
-    </div>
-    <div class="lg:col-span-2 lg:col-start-2 flex content-center flex-wrap px-10 py-16">
-      <h1 class="font-extrabold tracking-wide text-slate-300 font-['Minimal'] text-3xl lg:text-4xl pb-8">Services</h1>
-      <div class="grid 2xl:grid-rows-2 2xl:grid-cols-2 2xl:grid-cols-2 3xl:grid-cols-3 gap-12">
-        {% for item in data.services %}
-          <div class="overflow-hidden shadow-lg shadow-zinc-900 bg-zinc-700 p-7 lg:p-10 rounded-xl">
-            <div class="flex items-center pb-5">
-              <div class="bg-gradient-to-tl from-cyan-500 to-indigo-700 shadow-xl w-20 p-2 rounded-full">
-                <img src="{{ item.icon }}" alt="Service Icon" class="min-w-full">
-              </div>
-              <h1 class="flex-1 font-semibold tracking-wide text-slate-100 text-2xl px-4">{{ item.title}}</h1>
+  <div id="services" class="grid h-full bg-zinc-800 relative py-24 lg:p-32">
+    <h1 class="text-center font-extrabold tracking-wide text-slate-300 font-['Minimal'] text-4xl lg:text-6xl pb-20">Services</h1>
+    <div class="grid justify-items-center xl:grid-rows-2 xl:grid-cols-2 xl:grid-cols-2 gap-12">
+      {% for item in data.services %}
+        <div class="overflow-hidden shadow-lg shadow-zinc-900 bg-zinc-700 px-8 py-10 lg:p-14 rounded-xl w-5/6">
+          <div class="grid gap-5 auto-row-min">
+            <div class="bg-gradient-to-tl from-cyan-500 to-indigo-700 shadow-xl w-[6.5rem] p-3 lg:w-[7.5rem] lg:p-4 rounded-full place-self-center">
+              <img src="{{ item.icon }}" alt="Service Icon" class="min-w-full">
             </div>
-            <p class="text-lg text-slate-200 flex-wrap">{{ item.description}}</p>
+            <h1 class="flex-1 font-semibold tracking-wide text-slate-100 text-2xl text-center px-4">{{ item.title}}</h1>
+            <p class="text-xl text-slate-200 flex-wrap text-center lg:text-left">{{ item.description}}</p>
           </div>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
   {# TODO include when pass certifications #}
